@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>任务四-position法</title>
+		<meta http-equiv="content-type" content="text/html charset=utf-8">
+		<meta name="author"  content="猴赛雷">
+		<style type="text/css">			
+			.main{
+				position: absolute;
+				width: 400px;
+				height: 200px;
+				top: 50%;
+				left: 50%;
+				margin-left: -200px;
+				margin-top: -100px;
+				background-color: #ccc;
+			}
+			.circle{
+				position: absolute;
+				width: 50px;
+				height: 50px;
+				background-color: #fc0;
+			}
+			.leftcircle{
+				top: 0;
+				left: 0;
+				border-bottom-right-radius: 50px;
+				-webkit-border-bottom-right-radius:50px;
+			}
+			.rightcircle{
+				right: 0;
+				bottom:0;
+				border-top-left-radius: 50px;
+				-webkit-border-top-left-radius:50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<div class="circle leftcircle"></div>
+			<div class="circle rightcircle"></div>
+		</div>
+	</body>
+</html>

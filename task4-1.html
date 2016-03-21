@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>任务四-Flex法</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="author" content="猴赛雷">
+		<style type="text/css">
+		html,body{
+			width: 100%;
+			height: 100%;
+		}
+			.main{
+				width: 100%;
+				height: 100%;
+				display: -webkit-flex;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.content{
+				width: 400px;
+				height: 200px;
+				background-color: #ccc;
+				position: relative;
+			}
+			.circle{
+				position: absolute;
+				width: 50px;
+				height: 50px;
+				background-color: #fc0;
+			}
+			.leftcircle{
+				top: 0;
+				left: 0;
+				border-bottom-right-radius: 50px;
+				-webkit-border-bottom-right-radius:50px;
+			}
+			.rightcircle{
+				right: 0;
+				bottom:0;
+				border-top-left-radius: 50px;
+				-webkit-border-top-left-radius:50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<div class="content">
+				<div class="circle leftcircle"></div>
+				<div class="circle rightcircle"></div>
+			</div>
+		</div>
+	</body>
+</html>
